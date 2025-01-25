@@ -1,0 +1,50 @@
+<===== Spring Core =====>
+=========================
+
+** Course Content **
+====================
+1) Spring Core Module
+2) Spring Boot
+3) Spring Data JPA
+4) Spring Web MVC
+5) Restful Services (Spring REST)
+6) Spring Cloud
+7) Microservices
+8) Spring Security
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+** Rules and guidelines to work with Spring Container.
+
+* Spring Container *
+====================
+
+1. Find/Scan classes (Spring Bean)
+2. Create objects
+3. Link objects (Inject / HAS-A)
+4. Destroy the objects (even container)
+
+
+** Container : Memory that holds objects.
+
+==> Spring Container takes 2 inputs :-
+
+1. Spring Bean : It is a class that follows rules given by Spring container.
+
+2. Spring Configuration File : It gives metadata (obj name, link details, some data) This
+   we can provide in 3 ways :- XML config, Java config, Annotation config**
+
+
+==> There are two types of Containers given by Spring f/w.
+
+1.  BeanFactory(I) : It supports only XML Config. It has one Impl class.
+    Ex. :- XmlBeanFactory(C).
+    It is also called as legacy container.
+
+2.  ApplicationContext(I) : It supports all configuration (XML/Java/Annotation). 
+    It has multiple impl classes.
+Ex. :-  ClassPathXmlApplicationContext(C)
+        FileSystemXmlApplicationContext(C)
+        AnnotationConfigApplicationContext(C)
