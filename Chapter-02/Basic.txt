@@ -1,0 +1,57 @@
+
+
+<====  Spring Framework  ====> 
+==============================
+
+=> To develop web based applications.
+
+Framework = Technologies + Design Patterns
+RAD = Rapid Application Development.
+Less Error rate.
+Boiler plate Code (Reduce duplicate code).
+
+Ex :- Shopping App
+Servlets, JSP, JDBC = 20K LOC  (LOC = Lines of Code)
+Spring Framework = 10K LOC
+
+
+<====  Spring Boot  ====> 
+=========================
+
+==> Autoconfiguration, that comes with pre-defined spring code which reduces LOC. 
+    (Common lines of Code).
+
+=> There is parent project created by Pivotal Team. 
+=> That gives some common code in pre-defined format (JARS)
+=> Your project should extend parent project.
+=> Project can be created either using Maven/Gradle
+=> Embedded Servers (Tomcat/ Jetty/ Undertow) and databases (H2/ HSQL/ Derby) 
+    are given in Spring boot.
+
+
+<====  Microservices  ====>
+===========================
+
+It is a design to develop a very big app.
+
+(Spring Cloud) --- Design of writing an application.
+AWS Cloud -- To run your application.
+Develop -- Build -- Deployment    
+
+=> Monolithic Application :- Developing application and build as a single unit.
+    All Modules code as a single file.
+
+=> Limitation :-
+ 
+* If one module code is modified, entire app need to be rebuild and re-deploy
+* If one module is not working properly that may effect other modules too.
+
+
+Microservices : It is a design to develop a very big app.
+===============
+
+=> One Module is converted into One Application 
+=> Parallel Development, Deployment, Moniter, AutoScale (Load Balance).
+
+Spring Cloud : It is a API used to develop apps using microservices design.
+==============
