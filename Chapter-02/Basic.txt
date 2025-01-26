@@ -47,11 +47,11 @@ Develop -- Build -- Deployment
 * If one module is not working properly that may effect other modules too.
 
 
-Microservices : It is a design to develop a very big app.
-===============
+=> Microservices : It is a design to develop a very big app.
+==================
 
 => One Module is converted into One Application 
 => Parallel Development, Deployment, Moniter, AutoScale (Load Balance).
 
-Spring Cloud : It is a API used to develop apps using microservices design.
-==============
+=> Spring Cloud : It is a API used to develop apps using microservices design.
+=================
