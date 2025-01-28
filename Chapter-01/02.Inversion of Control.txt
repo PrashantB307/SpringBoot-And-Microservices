@@ -1,0 +1,78 @@
+
+
+** Inversion of Control ===>
+============================
+
+* Spring Container (Spring Ioc) *
+
+1. Find/Scan classes (Spring Bean)
+2. Create objects
+3. Link objects (Inject / HAS-A)
+4. Destroy the objects (even container)
+
+==> Spring Container takes 2 inputs :-
+
+1. Spring Bean (class + rules)
+2. Spring Configuration File  (XML, Java, Annotation)
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+* XML Configuration Tags -->
+----------------------------
+
+<bean>               --     creating object
+
+<property>           --     calling set method
+
+<constructor-arg>    --     using parameterized constructor
+
+<value>              --     Primitive Type
+
+<list> - [List] || <set> - [Set] || <map> - [Map] || <props> - [Properties]
+
+<ref>                --     Reference Type (link two objects)
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+* Spring Bean =>
+----------------
+
+package com.app;
+class MyView{
+    String prefix;
+    String suffix;
+    
+    // const...
+    // set, get method...
+}
+
+
+* Spring Container =>
+---------------------
+
+mob {
+    prefix = page
+    suffix = jsp
+}
+
+
+* XML Config. =>
+----------------
+ 
+<bean id = "mob" class = "com.app.MyView">
+    <property name = "prefix">
+        <value> page </value>
+    </property>
+
+    <property name = "suffix">
+        <value> jsp </value>
+    </property>
+
+</bean>   
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
